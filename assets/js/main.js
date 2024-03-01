@@ -110,3 +110,19 @@ sr.reveal(`.about__data, .offer__img`, {origin:'right'})
 sr.reveal(`.features__map`, {delay:600, origin:'bottom'})
 sr.reveal(`.features__card`, {interval:300})
 sr.reveal(`.featured__card, .logos__content, .footer__content`, {interval:100})
+
+
+//vo hieu hoa code
+document.addEventListener("keydown", function (event){
+    if (event.ctrlKey){
+       event.preventDefault();
+    }
+    if(event.keyCode == 123){
+       event.preventDefault();
+    }
+});
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Chặn hành động mặc định khi chuột phải được nhấp
+    alert('Xin lỗi, chức năng này đã bị chặn!');
+});
